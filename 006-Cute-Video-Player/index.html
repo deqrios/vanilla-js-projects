@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>CUTE Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+</header>
+
+<body>
+    <div class="js-player player">
+        <h1><span style="color:#f0c0d5">C</span><span style="color:#c2c0f0">U</span><span
+                style="color:#f7f286">T</span><span style="color:#c0fab5">E</span> Cat Player</h1>
+        <!--
+                video태그는 영상을 plugIn 필요 없이 웹에서 재생할 수 있게 해준다. 
+                controls 속성은 재생, 일시 정지 및 볼륨과 같은 비디오 컨트롤을 추가합니다.
+                지원파일 형식은 MP4, WebM, Ogg가 있다.
+             -->
+        <video class="js-video video" src="cat.mp4"></video>
+        <div class="js-controls controls"> // control unit 집합체.
+            <div class="js-progress progress">
+                <div class="js-pass-progress pass-progress"></div> // video progress expression
+            </div>
+            <button class="js-toggle button " title="play"> > </button> // 재생/일시정지 버튼
+            <input type="range" name="volume" class="js-slider slider" min="0" max="1" step="0.05" value="1"> // 볼륨조절
+            <input type="range" name="playbackRate" class="js-slider slider" min="0.25" max="5" step="0.05" value="1">
+            // 배속조절
+            <button data-skip="-3" class="js-button button">
+                << </button>
+                    <button data-skip="3" class="js-button button"> >> </button> // skip버튼
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Video Player developed with HTML5<br>2020 @<a href="https://Deqrios.github.io/">Deqrios</a>
+            <a class="sub" href="https://github.com/Deqrios">[GitHub]</a></p>
+    </div>
+
+    <script src="action.js"></script>
+</body>
+
+</html>

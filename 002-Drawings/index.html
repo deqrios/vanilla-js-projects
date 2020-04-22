@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Draw Anything!</title>
+    <link rel="stylesheet" href="style.css" />
+</header>
+
+<body>
+    <h1>Drawing</h1>
+
+    <!-- Canvas -->
+    <canvas class="js-canvas canvas"></canvas> <!-- html의 기능 -->
+
+    <!-- Button -->
+    <div class="js-buttons buttons">
+        <button class="js-option option">Paint</button>
+        <button class="js-save save">Save</button>
+    </div>
+
+    <!-- Rangebar -->
+    <div class="js-range range">
+        <input type="range" class="js-rangeBar rangeBar" min="0.1" max="5" value="2.5" step="0.1" style="width:500px" />
+    </div>
+
+    <!-- Color_Palette -->
+    <div class="js-palette palette">
+        <div class="js-colors colors">
+            <div class="js-color color" style="background-color: #97fce2"></div>
+            <div class="js-color color" style="background-color: #f3f587"></div>
+            <div class="js-color color" style="background-color: #facfaf"></div>
+            <div class="js-color color" style="background-color: #edc6f7"></div>
+            <div class="js-color color" style="background-color: #fcd4e1"></div>
+            <div class="js-color color" style="background-color: #f8c6d7"></div>
+            <div class="js-color color" style="background-color: #cdcefc"></div>
+        </div>
+    </div>
+    <script src="../js/canvas.js"></script>
+</body>
+<footer>
+    A simple drawing board.<br> 2020 @<a href="https://Deqrios.github.io/">Deqrios</a>
+    <a class="sub" href="https://github.com/Deqrios">[GitHub]</a>
+</footer>
+
+</html>
