@@ -54,6 +54,18 @@ function askName() {
     form.addEventListener("submit", NameSubmitHandler);
 }
 
+// => 로컬스토리지에 저장되어있는 USER를 가져옴.
+function getName() {
+    const current = localStorage.getItem(USER);
+
+    // :: 로컬스토리지에 USER정보가 없다면 USER정보를 입력할 수 있는 입력창을 보여주고, 있으면 USER에게 인사문구를 보여줌.
+    if (current == null) {
+        askName();
+    } else {
+        loadHello(current);
+    }
+}
+
 // * ------------------------------- Background 함수부 -------------------------------
 
 // => 3가지 image중에 한가지를 랟덤하게 가져와서 backgrond로 보여줌.
